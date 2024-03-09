@@ -1,0 +1,212 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey",
+        "Hello, Hi can I help you today?",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, you're always welcome for any other queries!",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "benefits",
+      "patterns": [
+        "What benefits does the company offer?",
+        "What are the benefits I can get as an employee?",
+        "List down the benefits that the company offers",
+        "What benefits do I get?",
+        "What benefits am I eligible for?",
+        "How do I enroll in the benefits program?"
+      ],
+      "responses": [
+        "We offer a range of benefits including health insurance, retirement plans, and flexible spending accounts.",
+        "You can find the benefits you are eligible for through our HR portal. These mainly include health insurance, retirement plans, and flexible spending accounts.",
+        "Your benefits package includes health insurance, dental and vision coverage, retirement savings plans, and paid time off. If you have any questions about your specific benefits, please let us know and we can provide you with more detailed information.",
+        "You can find information about your benefits by logging into our HR system and accessing the Benefits section. If you have any questions about your benefits, please let us know and we can help you navigate the system",
+        "We offer a range of benefits to our employees, including health insurance, dental insurance, vision insurance, and retirement plans. Please refer to our employee handbook or HR website for detailed information about the benefits we offer",
+        "Your benefits package depends on your employment status and the terms of your employment contract. If you're unsure about the benefits you're entitled to, please speak with your manager or HR representative.",
+        "Our benefits package includes a variety of programs designed to support the physical and mental well-being of our employees, such as wellness programs, employee assistance programs, and paid time off. Please refer to our employee handbook or HR website for detailed information about the programs we offer."
+      ]
+    },
+    {
+      "tag": "information",
+      "patterns": [
+        "How can I update my personal information?",
+        "What is the procedure to update my personal information?",
+        "How does one update their personal information?",
+        "How can I update my personal information such as my home address or phone number?"
+      ],
+      "responses": [
+        "You can update your personal information by logging into our HR portal and selecting the \"Personal Information\" tab.",
+        "To update your personal information, please log in to the employee self-service portal and make the necessary changes. Alternatively, you can submit a personal information update form to HR.",
+        "Please provide the required documentation to update your personal information. This may include a copy of your driver's license, passport, or other government-issued ID. We recommend that you update your personal information in the HR system at least once a year, or whenever there is a significant change in your personal circumstances. ",
+        "You can update your direct deposit information online. Please log in to the employee self-service portal and follow the instructions.",
+        "you can update your direct deposit information online. Log into our HR system and follow the instructions to update your information.",
+        "Thank you for letting us know that you need to update your personal information. You can log into our HR system and update your information online. If you have any issues updating your information, please let us know and we can help you through the process. "
+      ]
+    },
+    {
+      "tag": "vacation",
+      "patterns": [
+        "What is the vacation policy?",
+        "How many days off I can take?",
+        "How many vacation days do employees get per year?",
+        "How many personal days am I entitled to and when do they renew?",
+        "What is the company policy for paid holidays?",
+        "What is the process for requesting time off?",
+        "Can I carry over unused vacation days to the next year?"
+      ],
+      "responses": [
+        "The number of vacation days you are allowed per year may vary depending on your job title, length of service, and company policy. Please refer to your employee handbook or speak with HR to find out your specific entitlement.",
+        "The number of days off you can take for bereavement leave may vary depending on your relationship with the deceased and company policy. Please refer to your employee handbook or speak with HR to find out your specific entitlement.",
+        "The number of days off you are allowed per year may vary depending on your job title and company policy. Please refer to your employee handbook or speak with HR to find out your specific entitlement.",
+        "You may be able to take unpaid leave if you need time off but have use d all your vacation days. However, you will need to work with your manager and HR to determine the eligibility and duration of your unpaid leave, as well as the impact on your benefits and job status."
+      ]
+    },
+    {
+      "tag": "remote work",
+      "patterns": [
+        "What is the company's policy on remote work?",
+        "Can I work remotely some days of the week? ",
+        "Am I allowed to work remotely?",
+        "Am I eligible for remote work?",
+        "Can I work remotely full-time?"
+      ],
+      "responses": [
+        "Our policy on remote work allows employees to work from home up to two days per week with manager approval",
+        "Our company has a flexible work policy that allows employees to work remotely when necessary. Employees must obtain approval from their supervisor before working remotely.",
+        "Remote work is an option that may be available to some employees, depending on the nature of their work and their job responsibilities. If you are interested in working remotely, please speak with your manager or HR representative to discuss your options.",
+        "Our remote work policy outlines the requirements and expectations for employees who work remotely, including guidelines for communication, productivity, and equipment needs. Please refer to our employee handbook or HR website for detailed information.",
+        "If you are working remotely, it is important to maintain regular communication with your supervisor and coworkers to ensure that everyone is on the same page and that work is progressing smoothly. This may include regular check-ins, video conferencing, or other forms of communication as needed.",
+        "Our company is committed to providing a safe and healthy workplace for all employees, whether they work on-site or remotely. If you have concerns about your work environment or your health and safety while working remotely, please speak with your manager or HR representative.",
+        "We understand that each employee's situation is unique, and we are committed to finding solutions that work for everyone. If you have questions or concerns about remote work or other work arrangements, please speak with your manager or HR representative to discuss your options. "
+      ]
+    },
+    {
+      "tag": "dress code",
+      "patterns": [
+        "What is the company's policy on dress code?",
+        "What is the dress code for the company?",
+        "What type of clothing should I wear to work?",
+        "Is it necessary to wear a uniform?",
+        "Are there any gender-specific dress code requirements?"
+      ],
+      "responses": [
+        "Our dress code policy is business casual. Employees are expected to dress professionally and in a manner that is appropriate for their job function.",
+        "Our dress code policy requires employees to dress professionally and adhere to business casual attire unless otherwise specified.",
+        "Our dress code policy prohibits certain clothing items such as flip-flops, shorts, or tank tops, which may not be considered professional attire.",
+        "Our dress code policy allows for employees to express their personal style while maintaining a professional appearance. However, clothing items or accessories with offensive messages or logos may not be appropriate.",
+        "Our dress code policy allows for employees to wear traditional or cultural clothing that meets our professional standards.",
+        "Our company dress code policy requires that employees dress professionally and appropriately for their position and work location.",
+        "Some positions may require a uniform or branded clothing to be worn, but employees will be provided with these items."
+      ]
+    },
+     {
+      "tag": "workplace issues",
+      "patterns": [
+        "How do I report a workplace issue or complaint?",
+        "What is the procedure to report a workplace issue?",
+        "How can I report a complaint regarding a workplace issue?",
+        "Where to complaint?",
+        "How to complaint?",
+        "How to report workplace misconduct?"
+      ],
+      "responses": [
+        "You can report a workplace issue or complaint by speaking to your manager, HR representative, or by submitting a report through our HR portal.",
+        "Our policy on workplace bullying prohibits any form of verbal, physical, or psychological harassment. If you experience workplace bullying, please report it to HR.",
+        "If you experience harassment or discrimination in the workplace, you should report it to HR immediately. We take these matters very seriously and will investigate and take appropriate action.",
+        "We take all workplace concerns seriously, and our first priority is to ensure the safety and well-being of our employees. We have policies and procedures in place to address workplace issues, and we will work to resolve the matter as quickly and fairly as possible.",
+        "Our company values open communication and feedback, and we are committed to maintaining a safe and respectful workplace for all employees. If there are any steps that we can take to improve the workplace environment, we would like to hear your suggestions.",
+        "If the investigation reveals that policies or laws were violated, we will take appropriate action to address the matter, which may include disciplinary action or termination of employment, depending on the circumstances.",
+        "We encourage employees to report any workplace issues or concerns to their supervisor or HR representative so that we can address the matter appropriately. We take all reports of workplace issues seriously, and we will work with you to ensure that the matter is resolved as quickly and fairly as possible."
+      ]
+    },
+    {
+      "tag": "performance review",
+      "patterns": [
+        "Can you explain the company's performance review process?",
+        "What is the company's performance review process?",
+        "Can I know about the company's performance review procedure?",
+        "Tell me something about performance review",
+        "What is the performance review policy?"
+
+      ],
+      "responses": [
+        "Our performance review process involves a series of meetings with your manager to discuss your goals, progress, and any areas for improvement.",
+        "Performance is measured based on a combination of factors, such as job duties, quality of work, productivity, and contributions to the team or organization. Your manager will provide you with specific performance metrics that are relevant to your role.",
+        "Your performance is evaluated based on specific goals and objectives that were set at the beginning of the review period. We also consider factors such as your contributions to the team, your ability to work independently, and your adherence to company policies and procedures.",
+        "Performance reviews typically involve a meeting between you and your supervisor or manager, where you will have the opportunity to discuss your performance over the past period, receive feedback on your performance, and discuss any goals or objectives for the future.",
+        "We use a variety of criteria to evaluate employee performance, including job knowledge and skills, productivity, teamwork, communication, and other factors relevant to your specific role and responsibilities.",
+        "During a performance review, your supervisor will provide you with feedback on your strengths and areas for improvement, and work with you to set goals and expectations for the upcoming review period."
+      ]
+    },
+     {
+      "tag": "maternity leave",
+      "patterns": [
+        "What is the company's policy on maternity leave?",
+        "What is the company's policy on paternity leave?",
+        "I wanted to know about the procedure for taking a maternity leave.",
+        "How long is the maternity leave provided by the company?"
+      ],
+      "responses": [
+        "Our policy on maternity/paternity leave allows eligible employees to take up to 12 weeks of unpaid leave following the birth or adoption of a child.",
+        "You are eligible for up to 12 weeks of unpaid paternity leave following the birth or adoption of a child. However, the specific amount of leave may vary depending on your location and the laws in your country or state.",
+        "Maternity and paternity leave are important benefits that we offer to support employees during a significant life event. These benefits are designed to provide you with the time and resources you need to bond with your new child and adjust to your new family dynamic.",
+        "Our maternity and paternity leave policies comply with all relevant laws and regulations and are designed to provide you with job protection and paid time off during your leave.",
+        "Our maternity leave policy provides for up to 5 weeks of paid leave for new mothers, and our paternity leave policy provides up to 2 weeks of paid leave for new fathers."
+      ]
+    },
+     {
+      "tag": "overtime pay",
+      "patterns": [
+        "How does the company measure overtime pay?",
+        "What is the company's policy on overtime pay?",
+        "On what basis the overtime pay is calculated?"
+      ],
+      "responses": [
+        "Overtime pay is typically calculated as time-and-a-half or double-time, depending on the laws in your country or state. This means that for every hour worked beyond the threshold, you will receive 1.5 or 2 times your regular hourly rate.",
+        "Overtime pay is typically calculated as 1.5 times your regular hourly rate for every hour worked over 40 hours in a workweek. However, the specific calculation may vary depending on your location and the laws in your country or state.",
+        "Overtime pay is calculated based on your regular hourly rate, multiplied by one and a half times the number of hours worked over the standard 40 hours per week. For example, if your hourly rate is 100 Rs and you work 50 hours in a week, you would receive 10 hours of overtime pay at 101.5 Rs per hour.",
+        "We take compliance with overtime laws and regulations very seriously, and we are committed to ensuring that all employees are fairly compensated for their work. If you have any questions or concerns about our policy on overtime work, please do not hesitate to reach out to your HR representative."
+      ]
+    },
+    {
+      "tag": "training",
+      "patterns": [
+        "What types of training are available to employees?",
+        "Can I request additional training to improve my skills?",
+        "How do I sign up for a training course?"
+      ],
+      "responses": [
+        "We offer a variety of training opportunities, including on-the-job training, classroom training, online courses, and workshops. These training programs are designed to help employees develop new skills, improve existing skills, and advance their careers.",
+        "You can request additional training to improve your skills. We encourage employees to discuss their training needs and career goals with their manager and to explore the available training options. However, please note that some training programs may require approval from your manager or HR.",
+        "You can sign up for training programs through our online learning management system or by contacting HR. We encourage employees to take advantage of the available training programs and to discuss their career goals and development needs with their manager.",
+        "We have different types of training programs available, such as online courses, instructor-led training, coaching and mentoring, and job shadowing. Our company values the professional development of our employees and we offer various training programs to help our employees enhance their skills and knowledge.",
+        "The training programs we offer cover a variety of topics, including technical skills, soft skills, leadership, and compliance. Some of our training programs may be mandatory, depending on the employee's job duties and responsibilities."
+      ]
+    }
+  ]
+}
