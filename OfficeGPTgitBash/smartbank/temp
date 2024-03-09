@@ -1,0 +1,36 @@
+app.post('/assistant', (req, res) => {
+    // Read the JSON data from a file (assuming the JSON file is named 'data.json')
+    fs.readFile('C:/Users/91892/Desktop/HPAI_Banking_Assist/smartbank/eventTracking/data.json', 'utf8', (err, data) => {
+      if (err) {
+        console.error('Error reading JSON file:', err);
+        return res.status(500).send('Error reading JSON file');
+      }
+  
+      const jsonData = JSON.parse(data); // Parse the JSON data
+  
+      console.log(data)
+  
+      // Define the Python script and the argument
+      const pythonScript = 'C:/Users/91892/Desktop/HPAI_Banking_Assist/models/python-temp/model-temp.py';
+      const argument = JSON.stringify(jsonData);
+  
+      // Execute the Python script
+      const pythonProcess = spawn('python', [pythonScript, argument]);
+  
+      let pythonScriptOutput = '';
+  
+      // Capture the Python script's output
+      pythonProcess.stdout.on('data', (data) => {
+        pythonScriptOutput += data.toString();
+      });
+  
+      // Handle the Python script's exit
+      pythonProcess.on('exit', (code) => {
+        if (code === 0) {
+          res.send(pythonScriptOutput);
+        } else {
+          res.status(500).send('Error executing Python script');
+        }
+      });
+    });
+  });

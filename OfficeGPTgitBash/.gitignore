@@ -1,0 +1,4 @@
+.env
+*.pyc
+__pycache__/
+.smartbank/eventTracking/data.json
