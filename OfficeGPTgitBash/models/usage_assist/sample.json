@@ -1,0 +1,43 @@
+{
+    "keys" : {
+        "10" : "Home",
+        "20" : "Login Now",
+        "21" : "UPI",
+        "22" : "Pay To Contacts",
+        "23" : "Insurace",
+        "24" : "Net Banking",
+        "25" : "Bank Holidays",
+        "33" : "Pay To Account",
+        "34" : "Pay To IFSC",
+        "29" : "Pay To Aadhar",
+        "42" : "Pay To Mobile",
+        "110" : "Statement",
+        "123" : "Pay To Mobile",
+        "190" : "Pay To VPA",
+        "145" : "Pay To Account"
+
+    } , 
+    "data" : [
+        {
+            "visit" : [22,20,24,25],
+            "time"  : [1, 2 , 3, 6],
+            "goal"  : [110]
+        } , 
+        {
+            "visit" : [22,24,22,21,33],
+            "time"  : [1,4,8,16,25],
+            "goal"  : [190]
+        } , 
+        {
+            "visit" : [29,20,34,25,21],
+            "time"  : [1, 3, 12, 15, 17],
+            "goal"  : [124]
+        } , 
+        {
+            "visit" : [22,20,42,22,10],
+            "time"  : [1, 8, 12, 19, 23],
+            "goal"  : [145]
+        } 
+    ]
+}
+
