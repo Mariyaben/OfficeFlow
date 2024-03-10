@@ -32,6 +32,7 @@ import CollegeScreen from "../screens/CollegeScreen";
 import OfferingsScreen from "../screens/OfferingsScreen";
 import RemitMoneyScreen from "../screens/RemitMoneyScreen";
 import ResumeScreeningComponent from "../screens/ResumeScreeningComponent";
+import ResumeButton from "../screens/ResumeButton";
 
 export type LoginStackParams = {
   OnBoarding: undefined;
@@ -63,6 +64,7 @@ export type LoginStackParams = {
   CollegeScreen: undefined;
   OfferingsScreen: undefined;
   RemitMoneyScreen: undefined;
+  ResumeButton: undefined;
 };
 
 export type LoginNavigationProps =
@@ -106,8 +108,7 @@ export function LoginStack() {
       <Stack.Screen name="CollegeScreen" component={CollegeScreen} />
       <Stack.Screen name="OfferingsScreen" component={OfferingsScreen} />
       <Stack.Screen name="RemitMoneyScreen" component={RemitMoneyScreen} />
-
-
+      <Stack.Screen name="ResumeButton" component={ResumeButton} /> 
 
 
 

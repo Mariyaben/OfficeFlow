@@ -26,7 +26,7 @@ const DashboardScreen = () => {
       case "Insurance":
         navigation.navigate("InsuranceScreen"); // Navigate to the Insurance screen
         break;
-      case "Net Banking":
+      case "OfficeFlow-HR":
         navigation.navigate("NetBankingScreen"); // Navigate to the Net Banking screen
         break;
       case "Bank Holidays":
@@ -56,7 +56,7 @@ const DashboardScreen = () => {
             break;
       default:
       case "Resume":
-          navigation.navigate("ResumeScreeningComponent"); // Navigate to the Online Payment screen
+          navigation.navigate("ResumeButton"); // Navigate to the Online Payment screen
           break;
 
       case "Cheque Book Services":
@@ -111,7 +111,7 @@ const DashboardScreen = () => {
         <FeatureCard
           icon="ios-people"
           label="Resume"
-          onPress={() => handleFeaturePress("ResumeScreeningComponent")}
+          onPress={() => handleFeaturePress("ResumeButton")}
         />
         <FeatureCard
           icon="ios-umbrella"
@@ -120,77 +120,35 @@ const DashboardScreen = () => {
         />
         <FeatureCard
           icon="ios-globe"
-          label="Net Banking"
+          label="OfficeFlow-HR"
           onPress={() => handleFeaturePress("Net Banking")}
         />
       </View>
 
       <View style={styles.featureContainer}>
-        <FeatureCard
-          icon="ios-calendar"
-          label="Bank Holidays"
-          onPress={() => handleFeaturePress("Bank Holidays")}
-        />
+       
         <FeatureCard
           icon="ios-calculator"
           label="Calculator"
           onPress={() => handleFeaturePress("Calculator")}
         />
-        <FeatureCard
-          icon="ios-cash"
-          label="Deposit Rates"
-          onPress={() => handleFeaturePress("Deposit Rates")}
-        />
-        <FeatureCard
-          icon="ios-card"
-          label="Online Payment"
-          onPress={() => handleFeaturePress("Online Payment")}
-        />
+      
+        
       </View>
       <View style={styles.sectionContainer}>
-        <Text style={styles.sectionTitle}>Recharge & Pay Bills</Text>
         <View style={styles.sectionDescription}>
-          <Text style={styles.sectionText}>
-            Earn more rewards points by paying bills
-          </Text>
-          <TouchableOpacity onPress={handleMoreInfoPress}>
-            <Ionicons name="ios-arrow-forward" size={24} color="black" />
-          </TouchableOpacity>
+          
         </View>
       </View>
 
       <View style={styles.featureContainer}>
-        <BillFeatureCard
-          icon="ios-phone-portrait"
-          label="Mobile"
-          onPress={() => handleFeaturePress('Mobile')}
-        />
-        <BillFeatureCard
-          icon="ios-desktop"
-          label="DTH"
-          onPress={() => handleFeaturePress("DTH")}
-        />
-        <BillFeatureCard
-          icon="ios-flash"
-          label="Electricity"
-          onPress={() => handleFeaturePress("Electricity")}
-        />
-        <BillFeatureCard
-          icon="ios-car"
-          label="SIB Fastag"
-          onPress={() => handleFeaturePress("SIB Fastag")}
-        />
+       
+        
       </View>
 
       <View style={styles.sectionContainer}>
-        <Text style={styles.sectionTitle}>Services & Request</Text>
         <View style={styles.sectionDescription}>
-          <Text style={styles.sectionText}>
-            Get all services at your fingertip
-          </Text>
-          <TouchableOpacity onPress={handleMoreInfoPress}>
-            <Ionicons name="ios-arrow-forward" size={24} color="black" />
-          </TouchableOpacity>
+         
         </View>
       </View>
 
@@ -198,34 +156,20 @@ const DashboardScreen = () => {
         <BillFeatureCard
           icon="md-card"
           label="Resume"
-          onPress={() => handleFeaturePress("ResumeScreeningComponent")}
+          onPress={() => handleFeaturePress("ResumeButton")}
         />
-        <BillFeatureCard
-          icon="md-albums"
-          label="Cheque Book Services"
-          onPress={() => handleFeaturePress("Cheque Book Services")}
-        />
+      
         <BillFeatureCard
           icon="md-warning"
           label="Complaints"
           onPress={() => handleFeaturePress("Complaints")}
         />
-        <BillFeatureCard
-          icon="md-person"
-          label="Update KYC"
-          onPress={() => handleFeaturePress("Update KYC")}
-        />
+      
       </View>
 
       <View style={styles.sectionContainer}>
-        <Text style={styles.sectionTitle}>Financial Tools & Enquiries</Text>
         <View style={styles.sectionDescription}>
-          <Text style={styles.sectionText}>
-            Get your enquiries resolved instantly
-          </Text>
-          <TouchableOpacity onPress={handleMoreInfoPress}>
-            <Ionicons name="ios-arrow-forward" size={24} color="black" />
-          </TouchableOpacity>
+        
         </View>
       </View>
 
@@ -237,7 +181,7 @@ const DashboardScreen = () => {
         />
         <BillFeatureCard
           icon="ios-calendar"
-          label="Bank Holidays"
+          label="Calendar"
           onPress={() => handleFeaturePress("Bank Holidays")}
         />
         <BillFeatureCard
@@ -253,37 +197,12 @@ const DashboardScreen = () => {
       </View>
 
       <View style={styles.sectionContainer}>
-        <Text style={styles.sectionTitle}>Payments</Text>
         <View style={styles.sectionDescription}>
-          <Text style={styles.sectionText}>
-            Make Payments at your comfort
-          </Text>
-          <TouchableOpacity onPress={handleMoreInfoPress}>
-            <Ionicons name="ios-arrow-forward" size={24} color="black" />
-          </TouchableOpacity>
+          
         </View>
       </View>
       <View style={styles.featureContainer}>
-  <BillFeatureCard
-    icon="ios-school"
-    label="College/School fee"
-    onPress={() => handleFeaturePress("College/School fee")}
-  />
-  <BillFeatureCard
-    icon="ios-gift"
-    label="Offerings"
-    onPress={() => handleFeaturePress("Offerings")}
-  />
-  <BillFeatureCard
-    icon="ios-globe"
-    label="Remit Money Abroad"
-    onPress={() => handleFeaturePress("Remit Money Abroad")}
-  />
-  <BillFeatureCard
-    icon="ios-card"
-    label="Online Payments"
-    onPress={() => handleFeaturePress("Online Payments")}
-  />
+  
 </View>
 </ScrollView>
 
