@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee List</title>
+    <style>
+        /* Style for the employee list */
+        #employeeList {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        /* Style for each employee item */
+        .employeeItem {
+            border-bottom: 1px solid #ccc;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white; /* Text color set to white */
+            background-color: black; /* Background color set to black */
+        }
+
+        /* Style for the details button */
+        .detailsButton {
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Employee List</h1>
+    <ul id="employeeList">
+        <!-- Employee details will be displayed here -->
+    </ul>
+
+    <script>
+        // Fetch employee details from the backend API
+        fetch('/api/employee')
+        .then(response => response.json())
+        .then(employees => {
+            // Select the ul element to append employee details
+            const employeeList = document.getElementById('employeeList');
+
+            // Iterate through the array of employees and create list items
+            employees.forEach(employee => {
+                // Create list item
+                const listItem = document.createElement('li');
+                listItem.classList.add('employeeItem');
+
+                // Create span elements for employee name and position
+                const nameSpan = document.createElement('span');
+                nameSpan.textContent = `${employee.Name} - ${employee.Position}`;
+
+                // Create button for each employee
+                const detailsButton = document.createElement('button');
+                detailsButton.textContent = 'View Details';
+                detailsButton.classList.add('detailsButton');
+
+                // Add event listener to the button to navigate to employee details page
+                detailsButton.addEventListener('click', () => {
+                    window.location.href = `/employeedetails.html?id=${employee.employee_ID}`;
+                });
+
+                // Append name, position, and button to the list item
+                listItem.appendChild(nameSpan);
+                listItem.appendChild(detailsButton);
+
+                // Append the list item to the ul element
+                employeeList.appendChild(listItem);
+            });
+        })
+        .catch(error => console.error('Error fetching employee details:', error));
+    </script>
+</body>
+</html>
