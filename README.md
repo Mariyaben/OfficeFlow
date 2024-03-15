@@ -3,6 +3,7 @@
 To run the project, 
 
 cd OfficeGPTgitBash
+
 cd smartbank
 
 #Install NPM packages
