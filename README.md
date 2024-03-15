@@ -1,12 +1,14 @@
-# Office-GPT
-cd OfficeGPTgitBash
+# OfficeFlow
 
+To run the project, 
+
+cd OfficeGPTgitBash
 cd smartbank
 
-Install NPM packages
+#Install NPM packages
 
 yarn install
 
-Run the app development server
+#Run the app development server
 
 yarn start
